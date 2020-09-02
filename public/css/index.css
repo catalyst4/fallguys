@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 1600px;
+    background: rgb(70, 177, 226);
+    background-image: url('/public/img/Crowns_1920_x_1080.png');
+}
+
+.news {
+    margin-bottom: 12px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px -5px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.news-container {
+    display: flex;
+    padding: 10px;
+}
+
+.news .news-img {
+    width: 60%;
+}
+
+.sub-news .news-img {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    border-radius: 15px;
+}
+
+.news-img .text {
+    position: absolute;
+    padding: 25px;
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.news-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.sub img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.news-info {
+    width: 40%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.news-info h1 {
+    font-size: 48px;
+}
+
+.sub-news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub {
+    width: 48%;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px -5px rgba(0,0,0,0.75);
+    display: flex;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 15px 25px;
+    background: rgb(240, 87, 202);
+    box-shadow: 8px 8px 1px -5px rgba(0,0,0,0.75);
+    font-size: 24px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+@media (min-width: 375px) and (max-width: 991px){
+    
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+
+    .news, .sub-news {
+        display: none;
+    }
+
+    .news-item {
+        width: 100%;
+        box-sizing: border-box;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 10px 10px 0px -6px rgba(0,0,0,0.75);
+        overflow: hidden;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-news .news-img {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+    }
+
+    .news-img img {
+        border-radius: 10px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .news {
+        margin-top: 50px;
+    }
+
+    .mobile-news {
+        display: none;
+    }
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+    <title>News | Fall Guys</title>
+    <link rel="stylesheet" href="/public/css/rounds.css">
+</head>
+<body>
+
+    <%- include('partials/header') %>
+    
+    <div class="container">
+        <div class="rounds">
+            <h1>Rounds</h1>
+            <div class="round-list">
+                <% for(var i=0;i<11;i++) { %>
+                <div class="round">
+                    <a href="">
+                        <div class="round-container">
+                            <div class="round-img">
+                                <img src="/public/img/QVAGdVodwSXZscM86G24xY.jpg" alt="">
+                                <div class="text">
+                                    <h1>Jump Showdown</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/mobile-nav') %>
+</body>
+</html>

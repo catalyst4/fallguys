@@ -1,0 +1,76 @@
+.navbar {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.navbar .flex {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    transform: rotate(-5deg);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    margin-right: 35px;
+    text-align: center;
+}
+
+.nav-border {
+    background: white;
+    clip-path: polygon(15% 0, 14% 1%, 13% 2%, 12% 3%, 11% 4%, 10% 5%, 0 95%, 1% 96%, 2% 97%, 3% 98%, 4% 99%, 5% 100%, 95% 100%, 96% 99%, 97% 98%, 98% 97%, 99% 96%, 100% 95%, 90% 5%, 89% 4%, 88% 3%, 87% 2%, 86% 1%, 85% 0);
+    padding: 3px;
+}
+
+.nav-box {
+    background: rgb(240, 87, 202);
+    clip-path: polygon(15% 0, 14% 1%, 13% 2%, 12% 3%, 11% 4%, 10% 5%, 0 95%, 1% 96%, 2% 97%, 3% 98%, 4% 99%, 5% 100%, 95% 100%, 96% 99%, 97% 98%, 98% 97%, 99% 96%, 100% 95%, 90% 5%, 89% 4%, 88% 3%, 87% 2%, 86% 1%, 85% 0);
+    padding: 8px 40px;
+}
+
+.nav-box i {
+    font-size: 48px;
+}
+
+.nav-title {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+@media (min-width: 375px) and (max-width: 991px){
+    
+    .logo img {
+        width: 100px;
+    }
+
+    .navbar .flex {
+        justify-content: center;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .navbar .flex {
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+}

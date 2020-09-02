@@ -1,0 +1,91 @@
+.rounds {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 3px 3px 1px rgb(241, 124, 236);
+}
+
+.round-list {
+    margin-top: 10px;
+    display: grid;
+}
+
+.round {
+    width: 100%;
+}
+
+.round-container {
+    background: white;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px -7px rgba(0,0,0,0.5);
+}
+
+.round-img {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.round-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.round-img .text {
+    position: absolute;
+    padding: 15px;
+    color: black;
+}
+
+.text h1 {
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 375px) and (max-width: 991px){
+    
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+
+    .rounds {
+        margin: 0;
+    }
+
+    .rounds h1 {
+        font-size: 36px;
+    }
+
+    .round-list {
+        margin-top: 5px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .round {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        width: 60%;
+        margin: auto;
+    }
+
+    .round-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+}

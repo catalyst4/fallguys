@@ -1,0 +1,12 @@
+body {
+    font-family: 'Titan One', cursive;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}

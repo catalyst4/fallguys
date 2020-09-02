@@ -1,0 +1,40 @@
+.mobile-nav {
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    background: rgb(240, 87, 202);
+    border-top: 2px solid white;
+}
+
+.mobile-nav .flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (min-width: 375px) and (max-width: 991px){
+    
+    .mobile-nav {
+        display: block;
+    }
+
+    .nav-item i {
+        font-size: 36px;
+        text-align: center;
+        display: block;
+    }
+    
+    .nav-item {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .mobile-nav {
+        display: none;
+    }
+
+}
